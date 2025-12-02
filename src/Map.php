@@ -28,7 +28,7 @@ final class Map
      * @param K $key
      * @param V $value
      */
-    public function __invoke($key, $value): void
+    public function __invoke(mixed $key, mixed $value): void
     {
         $this->map = ($this->map)($key, $value);
     }
@@ -62,7 +62,7 @@ final class Map
      * @param K $key
      * @param V $value
      */
-    public function put($key, $value): void
+    public function put(mixed $key, mixed $value): void
     {
         $this->map = ($this->map)($key, $value);
     }
@@ -75,7 +75,7 @@ final class Map
      * @return Maybe<V>
      */
     #[\NoDiscard]
-    public function get($key): Maybe
+    public function get(mixed $key): Maybe
     {
         return $this->map->get($key);
     }
@@ -86,7 +86,7 @@ final class Map
      * @param K $key
      */
     #[\NoDiscard]
-    public function contains($key): bool
+    public function contains(mixed $key): bool
     {
         return $this->map->contains($key);
     }
@@ -134,7 +134,7 @@ final class Map
      *
      * @param K $key
      */
-    public function remove($key): void
+    public function remove(mixed $key): void
     {
         $this->map = $this->map->remove($key);
     }

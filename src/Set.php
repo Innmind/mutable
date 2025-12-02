@@ -23,7 +23,7 @@ final class Set
      *
      * @param T $element
      */
-    public function __invoke($element): void
+    public function __invoke(mixed $element): void
     {
         $this->set = ($this->set)($element);
     }
@@ -55,7 +55,7 @@ final class Set
      *
      * @param T $element
      */
-    public function add($element): void
+    public function add(mixed $element): void
     {
         $this->set = ($this->set)($element);
     }
@@ -66,7 +66,7 @@ final class Set
      * @param T $element
      */
     #[\NoDiscard]
-    public function contains($element): bool
+    public function contains(mixed $element): bool
     {
         return $this->set->contains($element);
     }
@@ -76,7 +76,7 @@ final class Set
      *
      * @param T $element
      */
-    public function remove($element): void
+    public function remove(mixed $element): void
     {
         $this->set = $this->set->remove($element);
     }
