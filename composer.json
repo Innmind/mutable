@@ -15,7 +15,8 @@
         "issues": "http://github.com/innmind/mutable/issues"
     },
     "require": {
-        "php": "~8.4"
+        "php": "~8.4",
+        "innmind/immutable": "dev-next"
     },
     "autoload": {
         "psr-4": {
