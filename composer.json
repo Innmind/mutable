@@ -1,0 +1,30 @@
+{
+    "name": "innmind/mutable",
+    "type": "library",
+    "description": "Mutable data structures",
+    "keywords": ["mutable", "data", "structure"],
+    "homepage": "http://github.com/innmind/mutable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Baptiste Langlade",
+            "email": "baptiste.langlade@hey.com"
+        }
+    ],
+    "support": {
+        "issues": "http://github.com/innmind/mutable/issues"
+    },
+    "require": {
+        "php": "~8.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Innmind\\Mutable\\": "src/"
+        }
+    },
+    "require-dev": {
+        "innmind/static-analysis": "^1.2.1",
+        "innmind/black-box": "~6.5",
+        "innmind/coding-standard": "~2.0"
+    }
+}
