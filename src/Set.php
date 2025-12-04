@@ -11,6 +11,8 @@ use Innmind\Immutable;
 final class Set
 {
     /**
+     * @psalm-mutation-free
+     *
      * @param Immutable\Set<T> $set
      */
     private function __construct(
@@ -31,6 +33,7 @@ final class Set
     /**
      * @template A
      * @no-named-arguments
+     * @psalm-pure
      *
      * @param A $values
      *

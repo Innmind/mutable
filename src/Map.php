@@ -15,6 +15,8 @@ use Innmind\{
 final class Map
 {
     /**
+     * @psalm-mutation-free
+     *
      * @param Immutable\Map<K, V> $map
      */
     private function __construct(
@@ -37,6 +39,7 @@ final class Map
      * @template A
      * @template B
      * @no-named-arguments
+     * @psalm-pure
      *
      * @param list<array{A, B}> $pairs
      *

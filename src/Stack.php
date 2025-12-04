@@ -14,6 +14,8 @@ use Innmind\Immutable\{
 final class Stack
 {
     /**
+     * @psalm-mutation-free
+     *
      * @param Sequence<T> $data
      */
     private function __construct(
@@ -24,6 +26,7 @@ final class Stack
     /**
      * @template A
      * @no-named-arguments
+     * @psalm-pure
      *
      * @param A ...$values
      *

@@ -11,6 +11,8 @@ use Innmind\Immutable\Maybe;
 final class Ring
 {
     /**
+     * @psalm-mutation-free
+     *
      * @param list<T> $data
      */
     private function __construct(
@@ -21,6 +23,7 @@ final class Ring
     /**
      * @template A
      * @no-named-arguments
+     * @psalm-pure
      *
      * @param A ...$values
      *
