@@ -53,4 +53,12 @@ final class Ring
 
         return $value;
     }
+
+    /**
+     * Move the ring cursor to the first value
+     */
+    public function reset(): void
+    {
+        \reset($this->data);
+    }
 }
