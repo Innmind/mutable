@@ -147,4 +147,13 @@ final class Map
     {
         return $this->map->empty();
     }
+
+    /**
+     * @return Immutable\Map<K, V>
+     */
+    #[\NoDiscard]
+    public function snapshot(): Immutable\Map
+    {
+        return $this->map;
+    }
 }

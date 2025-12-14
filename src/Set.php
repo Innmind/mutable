@@ -127,4 +127,13 @@ final class Set
     {
         return $this->set->empty();
     }
+
+    /**
+     * @return Immutable\Set<T>
+     */
+    #[\NoDiscard]
+    public function snapshot(): Immutable\Set
+    {
+        return $this->set;
+    }
 }
